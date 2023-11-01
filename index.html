@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="canonical" href="https://www.sami-fouchal.fr" />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8615419ec2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="icon" href="img/profile.png">
+    <title>Sami FOUCHAL | Développeur WEB</title>
+</head>
+  
+<body>
+    <div class="vertical-center hidden" id="splash">
+        <div class="w-100 text-center text-light">
+            <svg class="gear" style="width:64px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path id="p" fill="#fdb" d="M94.1 58.8c.6-2.8.9-5.8.9-8.8s-.3-6-.9-8.8l-11.7-.4c-.7-2.6-1.7-5-3-7.3l8-8.5c-3.3-4.9-7.5-9.2-12.5-12.5l-8.5 8c-2.3-1.3-4.7-2.3-7.3-3l-.3-11.6C56 5.3 53 5 50 5s-6 .3-8.8.9l-.4 11.7c-2.6.7-5 1.7-7.3 3l-8.5-8c-4.9 3.3-9.2 7.5-12.5 12.5l8 8.5c-1.3 2.3-2.3 4.7-3 7.3l-11.6.3C5.3 44 5 47 5 50s.3 6 .9 8.8l11.7.4c.7 2.6 1.7 5 3 7.3l-8 8.5c3.3 4.9 7.5 9.2 12.5 12.5l8.5-8c2.3 1.3 4.7 2.3 7.3 3l.4 11.7c2.7.5 5.7.8 8.7.8s6-.3 8.8-.9l.4-11.7c2.6-.7 5-1.7 7.3-3l8.5 8c4.9-3.3 9.2-7.5 12.5-12.5l-8-8.5c1.3-2.3 2.3-4.7 3-7.3l11.6-.3zM50 66.9c-9.3 0-16.9-7.6-16.9-16.9S40.7 33.1 50 33.1 66.9 40.7 66.9 50 59.3 66.9 50 66.9z"></path></svg>
+            <svg class="gear" style="width:64px;margin:64px 0 0 -12px;animation-direction:reverse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><use href="#p"></use></svg>
+            
+            <h1 class="font-weight-bold text-shadow" style="font-family:Trebuchet MS,Helvetica,sans-serif">Sami-Fouchal.fr</h1>
+            <div class="text-muted">Votre site est en chargement ...</div>
+        </div>
+    </div>
+    
+        <!--Début header-->
+    <header class="en-tete">
+        <!--Menu header-->
+        <div class="phrase-presentation" data-aos="fade-up"
+        data-aos-duration="1000">
+            <h1>Développeur WEB en Ile de France</h1>
+            <span class="ligne"></span>    
+            <h2 data-typer="Bienvenue sur mon site, je vous souhaite une bonne navigation" class="phrase phraseAnimation">Bienvenue sur mon site, je vous souhaite une bonne navigation :)</h2>
+        </div>
+        <div class="fleches">
+            <a class="slideshow_arr"><span class="arrow arrow-first"></span><span class="arrow arrow-second"></span></a>
+        </div>             
+    </header>
+
+
+    <div class="container-fluid">
+    <main>
+        <nav class="col-12 sticky" >
+            <a href="#header" class="home">Sami <span>F</span>OUCHAL</a>
+            <ul id="slide">
+                <li><a href="#une" class="color1">A propos</a></li>
+                <li><a href="#deux" class="color2">Portfolio</a></li>
+                <li><a href="#trois" class="color3">Compétences</a></li>
+                <li><a href="#quatre" class="color4">Contact</a></li>
+                <li><a href="#cinq" class="color5">Coordonnées</a></li>
+            </ul>
+        </nav>
+
+        <section id="une" data-aos="fade-up" data-aos-duration="1000">
+            <h2>A propos</h2>
+            <span class="ligne"></span>
+            <div class="formation">
+                <article>
+                    <h3>Qui je suis ?</h3>
+                    <div  class="quijesuis">
+                    <div class="photo-profile" data-aos="zoom-in" data-aos-duration="1000">
+                        <figure>
+                            <img alt="photo profile Sami Fouchal Dévelloppeur WEB à Paris" src="../img/photo-profile.png">
+                            <figcaption>Sami Fouchal, votre développeur à Paris et en Ile-De-France.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="texte-presentation" data-aos="fade-left" data-aos-duration="3000">
+                        <p>Bonjour à vous ! Je m’appelle Sami, un passionné de l'informatique et de la programmation.</p>
+
+                            <p>Mes 1 ères lignes de code, c’est en Visual Basic que je les ai écrites pour la création d’un jeu vidéo avec des amis en 2005. Je me suis ensuite éloigné de l’informatique pensant que je ne pourrais pas en faire mon futur travail.</p>
+                            
+                             <p>Une erreur effacée récemment puisque j'ai suivis le programme « développeur intégrateur web» de l’IFOCOP et à présent, je compte bien faire de ma passion, mon métier.</p>
+                            
+                            <p>Au cours de cette formation intensive, j'ai appris à développer des applications web en utilisant l'ensemble des technologies suivants : HTML5, CSS3 , Bootstrap, JavaScript, PHP, JQuery, et SQL.</p>
+                            
+                            <p>Plus qu'un métier, c'est une vrai passion qui m'anime ! On dit de moi que je suis rigoureux, sérieux et surtout perfectionniste : ce sont ses qualités que je souhaite mettre à contribution pour vous aider à la réalisation de votre projet. N'hésitez pas à me contacter, je me ferais un plaisir de répondre à toutes vos interrogations !</p>
+                    </div>
+                </div>
+                </article>
+
+                <article data-aos="fade-right" data-aos-duration="1000">
+                    <h3>Formation</h3>
+                    <div>
+                        <ul>
+                            <li class="blockLi"><span>2019</span> <p>Titre RNCP  Développeur intégrateur de niveau 6 <br> • IFOCOP – Paris XI</p></li><br>
+                            <li class="blockLi"><span>2014</span> <p>BTS banque validé <br> • IFCV – Levallois Perret</p></li><br>
+                            <li class="blockLi"><span>2011</span> <p>BAC professionnel commerce validé avec mention très bien <br>• Lycée Paul Painlevé – Courbevoie</p></li><br>
+                            <li class="blockLi"><span>2005</span> <p>BEP comptabilité validé <br> • Lycée Santos Dumont – Saint Cloud</p></li><br>
+                            <li class="blockLi"><span>2003</span> <p>Brevet des collèges validé <br> • Collège Henri Sellier – Suresnes</p></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article data-aos="fade-left" data-aos-duration="1000">
+                    <h3>Expérience</h3>
+                        <div>
+                                <ul>
+                                    <li class="blockLi"><span>10/2019 - 02/2020</span><p>Développeur intégrateur web <br> ONPC</p></li><br>
+                                    <li class="blockLi"><span>02/2019 - 03/2019</span><p>Gestionnaire back office flux <br> BNP PARIBAS</p></li><br>
+                                    <li class="blockLi"><span>10/2018 - 12/2018</span><p>Gestionnaire vie du crédit <br>AXA BANQUE</p></li><br>
+                                    <li class="blockLi"><span>05/2016 - 09/2017</span><p>Analyste flux internationaux <br> BNP PARIBAS</p></li><br>
+                                    <li class="blockLi"><span>05/2015 - 11/2015</span><p>Gestionnaire crédit immobilier <br> BNP PARIBAS</p></li><br>
+                                    <li class="blockLi"><span>08/2014 - 03/2015</span><p>Conseiller clientèle multimédia <br> SOCIETE GENERALE</p></li><br>
+                                    <li class="blockLi"><span>09/2012 - 07/2014</span><p>Chargé d'accueil bancaire <br> SOCIETE GENERALE</p></li><br>
+                                    
+                                </ul>
+                                    		
+                        </div>
+                </article>
+            </div>
+            <div class="boutonCV col-12"><a href="document/Sami_Fouchal_CV.pdf"><i class="fas fa-download"></i>CV</a></div>
+        </section>
+
+        <section id="deux">
+            <h2>Portfolio</h2>
+            <span class="ligne"></span>
+            <div>
+                <a href="https://www.sami-fouchal.fr/LePetitCommerce" target="_blank" data-aos="fade-right" data-aos-duration="1000"><img src="img/site-lepetitcommerce.jpg" alt="site front end"></a> 
+                <a href="https://www.sami-fouchal.fr/swap" target="_blank" data-aos="fade-up" data-aos-duration="1000"><img src="img/site-swap.jpg" alt="site back end"></a> 
+                <a href="https://www.sami-fouchal.fr/otageeku" target="_blank" data-aos="fade-left" data-aos-duration="1000"><img src="img/site-otageeku.jpg" alt="site wordpress woocommerce otageeku"></a> 
+            </div>
+        </section>
+
+        <section id="trois" data-aos="fade-up" data-aos-duration="1000">
+            <h2>Compétences</h2>
+            <span class="ligne"></span>
+            <div id="skills" class="col-8 offset-2">
+                <div class="skillbar clearfix " data-percent="70%">
+                <div class="skillbar-title" style="background: #7c7a7a7a;"><span><i class="fa fa-css3" aria-hidden="true"></i>CSS3</span></div>
+                <div class="skillbar-bar" style="background: #4791d6;"></div>
+                <div class="skill-bar-percent">70%</div>
+            </div>
+     
+            <div class="skillbar clearfix " data-percent="80%">
+                <div class="skillbar-title" style="background: #7c7a7a7a;"><span><i class="fa fa-html5" aria-hidden="true"></i>HTML5</span></div>
+                <div class="skillbar-bar" style="background: #d41313;"></div>
+                <div class="skill-bar-percent">80%</div>
+            </div>
+     
+            <div class="skillbar clearfix" data-percent="65%">
+                <div class="skillbar-title" style="background: #7c7a7a7a;"><span><i class="fab fa-js"></i>Javascript</span></div>
+                <div class="skillbar-bar" style="background: #f5dd07;"></div>
+                <div class="skill-bar-percent">65%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="60%">
+                <div class="skillbar-title" style="background: #7c7a7a7a;"><span><i class="fab fa-php"></i>PHP</span></div>
+                <div class="skillbar-bar" style="background: #71059c;"></div>
+                <div class="skill-bar-percent">60%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="50%">
+                <div class="skillbar-title" style="background: #7c7a7a7a;"><span><img src="img/icone-mysql.png" alt="icone mysql">MYSQL</span></div><i class="icon-mysql"></i>
+                <div class="skillbar-bar" style="background: #f5b607;"></div>
+                <div class="skill-bar-percent">50%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="70%">
+                <div class="skillbar-title" style="background: #7c7a7a7a;"><span><i class="fa fa-wordpress" aria-hidden="true"></i>Wordpress</span></div>
+                <div class="skillbar-bar" style="background: #000000;"></div>
+                <div class="skill-bar-percent">70%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="70%">
+                <div class="skillbar-title" style="background: #7c7a7a7a;"><span><i class="fa fa-camera" aria-hidden="true"></i>Photoshop</span></div>
+                <div class="skillbar-bar" style="background: #03018f;"></div>
+                <div class="skill-bar-percent">70%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="60%">
+                <div class="skillbar-title" style="background: #7c7a7a7a;"><span><i class="fa fa-line-chart" aria-hidden="true"></i>SEO</span></div>
+                <div class="skillbar-bar" style="background: #0dcc5c;"></div>
+                <div class="skill-bar-percent">60%</div>
+            </div>
+
+        </section>
+
+        <section id="quatre" data-aos="fade-up" data-aos-duration="1000">
+            <h2>Contactez moi</h2>
+            <span class="ligne"></span>
+            <form id="contact" method="post" action="traitement_formulaire.php">
+                <aside>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom">
+                </aside>
+                <aside>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </aside>
+                <aside>
+                    <label for="objet">Objet</label>
+                    <input type="text" id="objet" name="objet"> 
+                    <label for="message">Message</label>
+                    <textarea type="text" id="message" name="message"></textarea>
+                </aside>
+                <button type="submit" name="envoi" data-aos="zoom-out" data-aos-delay="300"
+                data-aos-offset="0">Envoyer</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer data-aos="fade-in">
+        <div class="preFooter d-flex">
+            <div id="cinq">
+                <article>
+                    <h2>COORDONNÉES</h2>
+                    <span class="ligne"></span>
+                    <br>
+                    <div id='map' style='width: 100vw; height: 500px;'></div>
+                <script>
+                    mapboxgl.accessToken = 'pk.eyJ1Ijoia25pdmVzIiwiYSI6ImNrZDNhZzFydDFmYWQyc283ZG9sODE4enoifQ.IUHi0Pb3qgn5-SHkuENfig';
+                    var map = new mapboxgl.Map({
+                        container: 'map',
+                        center: [2.219033, 48.8667 ],
+                        zoom: 14,
+                        style: 'mapbox://styles/mapbox/outdoors-v11'
+                    });
+
+                    var popup = new mapboxgl.Popup({ 
+                        closeOnClick: false 
+                    })
+                    .setLngLat([2.219033, 48.8667 ])
+                    .setHTML('<div><span>Adresse</span><p>Hauts-de-Seine, FRANCE</p><span>Téléphone</span><p>06 49 71 61 05</p><span>Email</span><p>samy_fouchal@hotmail.fr</p><div>')
+                    .addTo(map);
+                    
+                    var marker = new mapboxgl.Marker({
+                        color: "#cf9a1e",
+                    })
+                    .setLngLat([2.219033, 48.8667 ])
+                    .addTo(map);
+                </script>
+            </div>    
+                </article>
+
+            
+        </div>
+    </div>
+      
+<hr>
+
+        <div class="footer">  
+            <p>Copyright &copy; Sami FOUCHAL | Développeur WEB à Paris et en Ile de France</p>
+        </div>
+    </footer>
+
+    <script> AOS.init();</script>
+    <script type="text/javascript" src="js/script.js"></script>
+    
+    
+   
+</body>
+</html>

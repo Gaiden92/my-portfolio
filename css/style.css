@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+body{font-family: 'Lato', sans-serif;}
+
+/********* HEADER ************/
+
+header{background: url(../img/bureau_sami_fouchal_developpeur.jpg) no-repeat center;background-size: cover;height: 100vh;/* viewport height */}
+header:before{content: '';position: absolute;height: 100%;width: 100%;background-color: #2c3e5026;}
+
+.phrase-presentation{font-family: 'Times New Roman', Times, serif;position: relative;top: 52%;color: #ffffff;margin: 0 25%;
+padding: 40px;background-color: #000000c9;border-radius: 30px;}
+
+
+nav{position: fixed;top: 0;background-color: #F9F8F8;padding: 20px 0;text-transform: uppercase;font-size: 20px;}
+.fixed {position: fixed;top: 0;width: 100%;background-color: white;border-bottom: 1px solid rgba(0, 0, 0, 0.294);z-index: 999;transform: all .2s ease-in-out;}
+nav a{color: #A1A6B4;}
+nav ul{display: flex;justify-content: flex-end;flex-wrap: wrap;}
+nav ul li {margin: auto 10px;}
+
+nav ul li a{padding: 10px;}
+
+nav ul li a:hover{padding: 10px;color: black;text-decoration: none;}
+.home{float: left;padding-left: 20px;font-size: 30px;color: rgb(207, 154, 30);transition: transform .2s linear;font-family: 'Times New Roman', Times, serif;}
+.home span{color: rgb(207, 154, 30);font-size: 35px;}
+.home:hover{color: black;text-decoration: none;transform: scale(1.1);}
+.home:first-letter{color: black;font-size: 35px;}
+
+
+
+header img{
+    display: block;
+    margin: 50px auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.ligne{
+    display: block;
+    height: 2px;
+    background-color: #000000;
+    width: 20%;
+    margin: 20px auto;
+}
+
+header h2{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+/************* MAIN ************/
+.colour{color: black!important;}
+
+
+/*********** SECTION 1 **********/
+
+#une{ background-color: #F9F8F8;color: black;}
+#une div.formation{display: flex;flex-wrap: wrap;justify-content: space-around;margin-top: 50px;}
+#une div article{width: 600px;padding: 10px;margin: 10px 0;font-size: 20px;}
+#une div article:first-child{width: 100%;}
+#une div article:first-child div.quijesuis{grid-gap: 50px;display: grid;grid-template-columns: 1fr 50%;}
+#une div article:first-child div.quijesuis div.photo-profile{text-align: center;margin: auto;}
+#une div article:first-child div.quijesuis div.photo-profile figcaption{font-style: italic;}
+#une div article:first-child div.quijesuis div.photo-profile figure > img{width: 200px;height: auto;}
+#une div article:first-child div.quijesuis div.texte-presentation{padding: 20px;}
+
+#une div article span{font-style: italic;margin-right: 100px;}
+
+.blockLi{display: flex;}
+
+
+#une h3{text-align: center;margin-bottom: 30px;color: rgb(207, 154, 30);}
+
+#une a{color: #ffffff;display: block;margin: 30px auto;border: 1px solid #000000;background-color:#000000;padding: 10px 10px;width: 10%;text-align: center;transition: all 0.3s ease-in-out;}
+
+#une a:hover {background-color: rgb(207, 154, 30);color: #ffffff;border-color: rgb(207, 154, 30);}
+
+#une a i{margin: 10px 5px;}
+
+/************ SECTION 2 ********/
+main section{padding: 90px 0;}
+
+main section h2, .preFooter h2{text-align: center;font-size: 40px;text-transform: uppercase;}
+
+h2{color: rgb(207, 154, 30);}
+
+#deux .ligne, #trois .ligne {background-color:  #2c3e50;}
+
+#deux div {display: flex;flex-wrap: wrap;justify-content: space-around;margin-top: 50px;}
+
+#deux div a{width: 500px;}
+
+#deux div img{width: 100%;height: 90%;margin: 20px auto;transition: all .3s ease-in-out;border: 1px solid black;}
+
+#deux div img:hover{transform: scale(1.025);opacity: 0.8;}
+
+
+/************* SECTION 3 **************/
+
+#quatre form{
+    color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#quatre form aside{
+    width: 50%;
+    margin: auto;
+}
+
+#quatre form aside label{
+    display: block;
+    text-align: left;
+    font-size: 20px;
+}
+
+#quatre form input, #quatre form textarea{
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 1px dashed #2c3e50;
+}
+
+#quatre form input{
+    height: 30px;
+    
+}
+
+#quatre form textarea{
+    height: 100px;
+}
+
+#quatre form button{
+    background-color: #000000;
+    color: #F9F8F8;
+    border: none;
+    padding: 20px;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 20px;
+    width: 125px;
+    transition: all .3s ease-in-out;
+    
+}
+
+#quatre form button:hover{
+    background-color: rgb(207, 154, 30);
+}
+
+/***************************SECTION 3****************************/
+
+#skills{margin-top: 50px;}
+  .skillbar-title span > i, .skillbar-title span > img{margin: 0 10px 0 0;}
+  .skillbar {
+      position:relative;
+      display:block;
+      margin-bottom:15px;
+      width:100%;
+      background:#eee;
+      height:35px;
+      border-radius:3px;
+      -moz-border-radius:3px;
+      -webkit-border-radius:3px;
+      -webkit-transition:0.4s linear;
+      -moz-transition:0.4s linear;
+      -ms-transition:0.4s linear;
+      -o-transition:0.4s linear;
+      transition:0.4s linear;
+      -webkit-transition-property:width, background-color;
+      -moz-transition-property:width, background-color;
+      -ms-transition-property:width, background-color;
+      -o-transition-property:width, background-color;
+      transition-property:width, background-color;
+  }
+  
+  .skillbar-title {position:absolute;top:0;left:0;width: 120px;font-weight:bold;font-size:13px;text-align: center;color:#fff;
+      background:#6adcfa;-webkit-border-top-left-radius:3px;-webkit-border-bottom-left-radius:4px;
+-moz-border-radius-topleft:3px;-moz-border-radius-bottomleft:3px;border-top-left-radius:3px;border-bottom-left-radius:3px;}
+  .skillbar-title span {display:block;background:rgba(0, 0, 0, 0.1);padding:0 10px;height:35px;line-height:35px;
+      -webkit-border-top-left-radius:3px;-webkit-border-bottom-left-radius:3px;-moz-border-radius-topleft:3px;
+      -moz-border-radius-bottomleft:3px;border-top-left-radius:3px;border-bottom-left-radius:3px;}
+  .skillbar-bar {height:35px;width:0px;background:#6adcfa;float: left;}
+  .containers {min-height: 100%;height: 100vh;}
+  .skill-bar-percent {position:absolute;right:10px;top:0;font-size:11px;height:35px;line-height:35px;color:#444;color:rgba(0, 0, 0, 0.4);}
+
+
+
+/****************************PREFOOTER**************************/
+.preFooter {color: #F9F8F8;display: flex;flex-wrap: wrap;justify-content: space-between;
+    margin-top: 50px;position: relative;width: 100%;height: 600px;}
+.preFooter .ligne{width: 50%;}
+.ligne2{display: block;height: 2px;background-color: #F9F8F8;margin: 20px auto;width: 98%;}
+
+#map{position: relative;width: 100vw;height: 500px;}
+#map .mapboxgl-canvas{position: absolute;}
+.mapboxgl-popup-close-button{font-size: 20px;right: 10px;top: 10px;}
+.mapboxgl-popup-content{padding: 10px 10px 10px;color: black;font-size: 12px;line-height: 23px;}
+
+/******************************BLOC RESEAU*********************/
+.reseau{font-size: 1.5em;}
+.reseau a {margin-right: 10px;text-decoration: none;color: rgb(207, 154, 30);}
+.reseau i{color: grey;}
+.reseau i:hover{color: #F9F8F8;}
+
+/****************************BLOC COORDONNEES****************************/
+#cinq span{
+    font-size: 1.5em;
+    color: rgb(207, 154, 30);
+}
+
+#cinq i{
+    font-size: 1.5em;
+}
+
+#cinq p{
+    font-size: 1.2em;
+}
+
+
+
+/********************************FOOTER**********************************/
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #F9F8F8;
+    color: black;
+    text-align: center;
+  }
+
+
+/********ANIMATIONS*****************
+
+/* PULSATING CARET */
+[data-typer]:after {
+    content:"";
+    display: inline-block;
+    vertical-align: middle;
+    width:1px;
+    height:1em;
+    background: rgb(255, 255, 255);
+            animation: caretPulsate 1s linear infinite; 
+    -webkit-animation: caretPulsate 1s linear infinite; 
+  }
+  @keyframes caretPulsate {
+    0%   {opacity:1;}
+    50%  {opacity:1;}
+    60%  {opacity:0;}
+    100% {opacity:0;}
+  }
+  @-webkit-keyframes caretPulsate {
+    0%   {opacity:1;}
+    50%  {opacity:1;}
+    60%  {opacity:0;}
+    100% {opacity:0;}
+  }
+
+/*Loader*/
+
+#splash{position: fixed;top: 0px;left: 0px;width: 100%;height: 100%;background: linear-gradient(45deg, rgb(34, 36, 40), rgb(68, 72, 86));color: rgb(255, 255, 255);z-index: 4000;}
+.text-light{margin: 20% auto;}
+@keyframes r {
+    0% { transform: rotate(0deg); } 100% { transform: rotate(45deg); }
+}
+#splash { transition: all .3s linear }
+svg.gear { animation: r .5s infinite linear; }
+
+/*fléches*/
+.fleches{display: none;}
+a.slideshow_arr {float:left;width:91px;height:72px;position:absolute;z-index:500;left:50%;margin-left:-45px;bottom:0;cursor: pointer;}
+.arrow {opacity: 0;position: absolute;left: 50%;bottom: 0;transform-origin: 50% 50%;transform: translate3d(-50%, -50%, 0);z-index:500;background:transparent url(../img/arrow.png) no-repeat center bottom;float:left;width:91px;height:40px}
+.arrow-first {-o-animation: arrow-movement 2s ease-in-out infinite;-webkit-animation: arrow-movement 2s ease-in-out infinite;-moz-animation: arrow-movement 2s ease-in-out infinite;animation: arrow-movement 2s ease-in-out infinite}
+.arrow-second {-o-animation: arrow-movement 2s 1s ease-in-out infinite;-webkit-animation: arrow-movement 2s 1s ease-in-out infinite;-moz-animation: arrow-movement 2s 1s ease-in-out infinite;animation: arrow-movement 2s 1s ease-in-out infinite}
+@-o-keyframes arrow-movement {
+0%   { 
+    opacity: 0;
+    bottom: 45%;
+}
+70% {
+    opacity: 1;
+}
+100% { 
+    opacity: 0;
+}
+}
+@-webkit-keyframes arrow-movement {
+0%   { 
+    opacity: 0;
+    bottom: 45%;
+}
+70% {
+    opacity: 1;
+}
+100% { 
+    opacity: 0;
+}
+}
+@-moz-keyframes arrow-movement {
+0%   { 
+    opacity: 0;
+    bottom: 45%;
+}
+70% {
+    opacity: 1;
+}
+100% { 
+    opacity: 0;
+}
+}
+@keyframes arrow-movement {
+0%   { 
+    opacity: 0;
+    bottom: 45%;
+}
+70% {
+    opacity: 1;
+}
+100% { 
+    opacity: 0;
+}
+}

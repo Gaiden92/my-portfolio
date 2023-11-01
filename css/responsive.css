@@ -1,0 +1,48 @@
+@media (max-width: 1440px){
+    #une div article:first-child div.quijesuis div.texte-presentation {padding: 50px;}
+    nav ul {justify-content: center;}
+}
+@media (max-width: 1024px){
+    .phrase-presentation{margin: 0 20%;}
+    a.slideshow_arr{bottom: -16px;}
+    nav{font-size: 15px;}
+    nav ul {justify-content: flex-end;margin: 20px 0;}
+    #une a {width: 15%;}
+}
+@media (max-width: 768px){
+    h1{font-size: 40px;}
+    #une div article:first-child div.quijesuis {grid-template-columns: 100%;}
+    #une a {width: 20%;}
+    /*menu*/
+    #slide{display: table;margin: 10px;padding: 10px;}
+    nav ul li{display: table-cell;margin: auto 10px;text-align: center;vertical-align: top;width: auto;}
+    .home{margin: 0 20px;padding:0 20px;font-size: 0px;}
+}
+@media (max-width: 425px){
+    header {background: url(../img/smartphone.jpg) no-repeat center;background-size: cover;height: 100vh;background-position: center;}
+    header::before{display:none;}
+    h1 {font-size: 30px;}
+    .phrase-presentation {margin: 0 10%;top: 45%;padding: 30px;}
+    .arrow {left: 58%;}
+    #une a {width: 30%;}
+    .fixed{width: 100%;left: 0;}
+    #slide{width: max-content;margin: 10px 0;
+        padding: 10px 0;}
+    .home{display:none;}
+
+    nav ul li{font-size: 10px;}
+    nav ul li a{padding: 0 10px;}
+}
+@media (max-width: 375px){
+.phrase-presentation {
+    margin: 0 10%;
+    top: 45%;
+    padding: 15px;}
+    
+}
+@media (max-width: 320px){
+    .phrase-presentation {
+        margin: 0;
+        top: 45%;
+        padding: 10px;}
+}
