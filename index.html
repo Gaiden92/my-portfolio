@@ -213,13 +213,29 @@
                     <h2>COORDONNÉES</h2>
                     <span class="ligne"></span>
                     <br>
-                    <div id='map' style='width: 400px; height: 300px;'></div>
+                    <div id='map' style='width: 100vw; height: 500px;'></div> 
+
                     <script>
-                    mapboxgl.accessToken = 'pk.eyJ1Ijoia25pdmVzIiwiYSI6ImNsb2c0aTR1czA1NHgycm52dng1em14aHIifQ.LXO7D6mXyScxnaBw3-ZjYA';
-                    var map = new mapboxgl.Map({
-                        container: 'map',
-                        style: 'mapbox://styles/mapbox/streets-v11'
-                    });
+                        mapboxgl.accessToken = 'pk.eyJ1Ijoia25pdmVzIiwiYSI6ImNsb2c0aTR1czA1NHgycm52dng1em14aHIifQ.LXO7D6mXyScxnaBw3-ZjYA';
+                        var map = new mapboxgl.Map({
+                            container: 'map',
+                            center: [2.219033, 48.8667 ],
+                            zoom: 14,
+                            style: 'mapbox://styles/mapbox/outdoors-v11'
+                        });
+
+                        var popup = new mapboxgl.Popup({ 
+                            closeOnClick: false 
+                        })
+                        .setLngLat([2.219033, 48.8667 ])
+                        .setHTML('<div><span>Adresse</span><p>Hauts-de-Seine, FRANCE</p><span>Téléphone</span><p>06 49 71 61 05</p><span>Email</span><p>samy_fouchal@hotmail.fr</p><div>')
+                        .addTo(map);
+                        
+                        var marker = new mapboxgl.Marker({
+                            color: "#cf9a1e",
+                        })
+                        .setLngLat([2.219033, 48.8667 ])
+                        .addTo(map);
                     </script>
             </div>    
                 </article>
