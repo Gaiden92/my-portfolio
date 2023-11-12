@@ -73,7 +73,7 @@ div.textfade > ul > li.title-project{
     border: 1px solid white;
     font-weight: bold;
     padding: 10px;
-    list-style: none;
+    list-style: none!important;
 }
 
 /*********** SECTION 1 **********/
