@@ -114,14 +114,14 @@ h2{color: rgb(207, 154, 30);}
     bottom: 0;
     left: 0;
     right: 0;
-    height: 90%;
+    height: 88%;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
     background-color: #008CBA;
 }
 
-#deux div.overlayfade > div.textfade {
+#deux div.overlayfade > div.textfade{
     color: white!important;
     font-size: 20px;
     position: absolute;
