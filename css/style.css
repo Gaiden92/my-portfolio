@@ -134,7 +134,7 @@ img.image-portfolio{
 .containerfade{
     position: relative;
 }
-.containerfade:hover .overlayfade {
+.containerfade:hover div.overlayfade {
     opacity: 1;
 }
 /************* SECTION 3 **************/
