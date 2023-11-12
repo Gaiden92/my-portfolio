@@ -67,6 +67,8 @@ div.textfade > ul > li{
     list-style: circle;
     padding: 5px;
     list-style-position: inside;
+    line-height: 15px;
+    font-size: 18px;
 }
 
 div.textfade > ul > li.title-project{

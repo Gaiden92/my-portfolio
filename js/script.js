@@ -8,12 +8,12 @@ $(document ).ready(function() {
 
   $(window).scroll(function(){
 
-    //Menu sticky
-    var sticky = $('.sticky'),
-    scroll = $(window).scrollTop();
-      if (scroll >= 907){
-          sticky.addClass('fixed');
-        } else { sticky.removeClass('fixed');}
+    // //Menu sticky
+    // var sticky = $('.sticky'),
+    // scroll = $(window).scrollTop();
+    //   if (scroll >= 907){
+    //       sticky.addClass('fixed');
+    //     } else { sticky.removeClass('fixed');}
 
         
 
@@ -53,8 +53,8 @@ $(document ).ready(function() {
         }());
       
       });
+      
     //Animation flèches
-    
     $('.fleches').delay(3000).fadeIn('swing');
     $('a.slideshow_arr').on('click', function() {
       $('html, body').animate({'scrollTop': $('.en-tete').innerHeight() });
