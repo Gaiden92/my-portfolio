@@ -1,9 +1,9 @@
 $(document ).ready(function() {
 
 
-  $(window).on('load', function () {
-      $("#splash").fadeOut('swing');
-    });
+  // $(window).on('load', function () {
+  //     $("#splash").fadeOut('swing');
+  //   });
   
 
   $(window).scroll(function(){
