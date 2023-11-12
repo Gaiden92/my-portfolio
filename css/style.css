@@ -101,11 +101,37 @@ h2{color: rgb(207, 154, 30);}
 
 #deux div a{width: 500px;}
 
-#deux div img{width: 500px;height: auto;margin: 20px auto;transition: all .3s ease-in-out;border: 1px solid black;}
+#deux div img{width: 500px;height: 281px;margin: 20px auto;transition: all .3s ease-in-out;border: 1px solid black;}
 
 #deux div img:hover{transform: scale(1.025);opacity: 0.8;}
 
+#deux div.overlayfade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
 
+#deux div.textfade {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.containerfade:hover .overlayfade {
+    opacity: 1;
+}
 /************* SECTION 3 **************/
 
 #quatre form{
