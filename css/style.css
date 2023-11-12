@@ -128,7 +128,9 @@ h2{color: rgb(207, 154, 30);}
     -ms-transform: translate(-50%, -50%);
     white-space: nowrap;
 }
-
+.containerfade{
+    position: relative;
+}
 .containerfade:hover .overlayfade {
     opacity: 1;
 }
