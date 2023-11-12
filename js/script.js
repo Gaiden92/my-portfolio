@@ -1,19 +1,19 @@
 $(document ).ready(function() {
 
 
-  // $(window).on('load', function () {
-  //     $("#splash").fadeOut('swing');
-  //   });
+  $(window).on('load', function () {
+      $("#splash").fadeOut('swing');
+    });
   
 
   $(window).scroll(function(){
 
-    // //Menu sticky
-    // var sticky = $('.sticky'),
-    // scroll = $(window).scrollTop();
-    //   if (scroll >= 907){
-    //       sticky.addClass('fixed');
-    //     } else { sticky.removeClass('fixed');}
+    //Menu sticky
+    var sticky = $('.sticky'),
+    scroll = $(window).scrollTop();
+      if (scroll >= 907){
+          sticky.addClass('fixed');
+        } else { sticky.removeClass('fixed');}
 
         
 
@@ -53,7 +53,7 @@ $(document ).ready(function() {
         }());
       
       });
-      
+
     //Animation flèches
     $('.fleches').delay(3000).fadeIn('swing');
     $('a.slideshow_arr').on('click', function() {
