@@ -65,12 +65,12 @@ header h2{
 
 li.title-project{
     font-size: 25px;
-    border-radius: 1px solid;
+    border-radius: 1px solid white;
     font-weight: bold;
     padding: 10px;
 }
 
-div.textfade div > ul > li{
+div.textfade > ul > li{
     list-style: circle;
     padding: 5px;
 }
