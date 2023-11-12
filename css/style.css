@@ -103,7 +103,7 @@ h2{color: rgb(207, 154, 30);}
 
 #deux div img{width: 500px;height: 281px;margin: 20px auto;transition: all .3s ease-in-out;border: 1px solid black;}
 
-img.image-portfolio{
+#deux img.image-portfolio{
     width: 500px;height: 281px;
 }
 #deux div img:hover{transform: scale(1.025);opacity: 0.8;}
@@ -131,10 +131,10 @@ img.image-portfolio{
     -ms-transform: translate(-50%, -50%);
     white-space: nowrap;
 }
-.containerfade{
+#deux a.containerfade{
     position: relative;
 }
-.containerfade:hover div.overlayfade {
+#deux a.containerfade:hover div.overlayfade {
     opacity: 1;
 }
 /************* SECTION 3 **************/
