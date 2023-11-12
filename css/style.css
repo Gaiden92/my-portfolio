@@ -59,10 +59,21 @@ header h2{
     font-size: 20px;
 }
 
+
 /************* MAIN ************/
 .colour{color: black!important;}
 
+li.title-project{
+    font-size: 25px;
+    border-radius: 1px solid;
+    font-weight: bold;
+    padding: 10px;
+}
 
+div.textfade div > ul > li{
+    list-style: circle;
+    padding: 5px;
+}
 /*********** SECTION 1 **********/
 
 #une{ background-color: #F9F8F8;color: black;}
