@@ -361,7 +361,8 @@
                         });
 
                         var popup = new mapboxgl.Popup({ 
-                            closeOnClick: false 
+                            closeOnClick: false,
+                            focusAfterOpen: false, 
                         })
                         .setLngLat([2.219033, 48.8667 ])
                         .setHTML('<div><span>Adresse</span><p>Hauts-de-Seine, FRANCE</p><span>Téléphone</span><p>06 49 71 61 05</p><span>Email</span><p>samy_fouchal@hotmail.fr</p><div>')
