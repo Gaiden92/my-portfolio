@@ -88,7 +88,7 @@ div.textfade > ul > li.title-project{
 #une div article:first-child div.quijesuis{grid-gap: 50px;display: grid;grid-template-columns: 1fr 50%;}
 #une div article:first-child div.quijesuis div.photo-profile{text-align: center;margin: auto;}
 #une div article:first-child div.quijesuis div.photo-profile figcaption{font-style: italic;}
-#une div article:first-child div.quijesuis div.photo-profile figure > img{width: 200px;height: auto;}
+#une div article:first-child div.quijesuis div.photo-profile figure > img{width: 300px;height: auto;}
 #une div article:first-child div.quijesuis div.texte-presentation{padding: 20px;}
 
 #une div article span{font-style: italic;margin-right: 100px;}
