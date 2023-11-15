@@ -69,6 +69,8 @@ div.textfade > ul > li{
     list-style-position: inside;
     line-height: 18px;
     font-size: 18px;
+    color: rgb(207 154 30)!important;
+    text-shadow: 2px 1px 1px black;
 }
 
 div.textfade > ul > li.title-project{
@@ -138,7 +140,7 @@ h2{color: rgb(207, 154, 30);}
 }
 
 #deux div.overlayfade > div.textfade{
-    color: rgb(207 154 30)!important;
+
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -146,7 +148,7 @@ h2{color: rgb(207, 154, 30);}
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     white-space: nowrap;
-    text-shadow: 2px 1px 1px black;
+
 }
 #deux a.containerfade{
     position: relative;
