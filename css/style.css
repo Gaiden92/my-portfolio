@@ -270,6 +270,7 @@ h2{color: rgb(207, 154, 30);}
 /****************************BLOC COORDONNEES****************************/
 #cing {
     width: 100%;
+    margin: 0 auto;
 }
 #cinq span{
     font-size: 1.5em;
