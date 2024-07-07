@@ -123,7 +123,7 @@ h2{color: rgb(207, 154, 30);}
 
 #deux div a{width: 500px;}
 
-#deux div img{padding: 30px;width: 500px;height: 281px;margin: 20px auto;transition: all .3s ease-in-out;border: 1px solid black;}
+#deux div img{width: 500px;height: 281px;margin: 20px auto;transition: all .3s ease-in-out;border: 1px solid black;}
 
 #deux img.image-portfolio{
     width: 500px;height: 281px;
