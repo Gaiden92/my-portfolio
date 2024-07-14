@@ -61,7 +61,13 @@ header h2{
     font-size: 25px;
 }
 
+.main-header {height: 100%;}
 
+.main-header .menu-wrap {
+    padding: 38px 0;
+}
+
+.site-logo a >img {height: auto;}
 /************* MAIN ************/
 .colour{color: black!important;}
 
